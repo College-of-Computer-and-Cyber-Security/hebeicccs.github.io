@@ -113,6 +113,16 @@
             margin: 0 0 5px 0;
             font-size: 1.2em;
         }
+        /* 新增：成员名字的超链接样式 */
+        .member-info h4 a {
+            color: #1f2937;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .member-info h4 a:hover {
+            color: #2563eb; /* 鼠标悬停变蓝 */
+            text-decoration: underline;
+        }
         .member-info p {
             margin: 0;
             color: #6b7280;
@@ -199,10 +209,11 @@
                     <p>核心成员 / 主要研究方向：网络攻防、恶意代码分析</p>
                 </div>
             </div>
+            <!-- 修改了王五的信息：加了 <a> 标签实现点击跳转 -->
             <div class="member">
                 <div class="member-avatar">王</div>
                 <div class="member-info">
-                    <h4>王五 博士研究生</h4>
+                    <h4><a href="https://hansimengcn.github.io/" target="_blank">王五 硕士研究生</a></h4>
                     <p>学生成员 / 研究课题：大语言模型越狱防御机制</p>
                 </div>
             </div>

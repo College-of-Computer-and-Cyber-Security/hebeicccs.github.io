@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>河北师范大学网络空间安全学院 - 团队主页</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 头部样式 */
+        header {
+            background-color: #1e3a8a; /* 深蓝色，有学术感 */
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #bfdbfe;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* 通用区块样式 */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            color: #111827;
+            position: relative;
+        }
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #3b82f6;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* 项目卡片网格 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #1f2937;
+        }
+
+        /* 成员列表样式 */
+        .member {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 15px;
+        }
+        .member-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #dbeafe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: #2563eb;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .member-info h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+        }
+        .member-info p {
+            margin: 0;
+            color: #6b7280;
+            font-size: 0.95em;
+        }
+
+        /* 联系方式 */
+        .contact-info {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* 底部 */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #6b7280;
+            font-size: 0.9em;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 团队简介 -->
+    <header>
+        <div class="container">
+            <h1>河北师范大学网络空间安全学院</h1>
+            <p>College of Computer and Cyber Security, Hebei Normal University<br><br>
+            我们致力于网络空间安全、人工智能安全等领域的前沿研究与人才培养。团队由多位资深教授、青年学者及优秀研究生组成。</p>
+        </div>
+    </header>
+
+    <!-- 2. 项目展示 -->
+    <section>
+        <div class="container">
+            <h2>研究方向与项目</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>人工智能安全</h3>
+                    <p>研究对抗样本、模型投毒、大模型隐私保护等前沿课题，探索AI技术在安全领域的可信应用。</p>
+                </div>
+                <div class="card">
+                    <h3>网络攻防与态势感知</h3>
+                    <p>面向复杂网络环境，研究高级持续性威胁（APT）检测、流量分析以及智能网络防御体系。</p>
+                </div>
+                <div class="card">
+                    <h3>密码学与应用</h3>
+                    <p>探索新型密码协议、多方安全计算与同态加密技术，保障数据在流通与计算中的安全。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 团队成员 -->
+    <section>
+        <div class="container">
+            <h2>团队成员</h2>
+            <div class="member">
+                <div class="member-avatar">张</div>
+                <div class="member-info">
+                    <h4>张三 教授</h4>
+                    <p>团队负责人 / 主要研究方向：人工智能安全、大数据隐私</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-avatar">李</div>
+                <div class="member-info">
+                    <h4>李四 副教授</h4>
+                    <p>核心成员 / 主要研究方向：网络攻防、恶意代码分析</p>
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-avatar">王</div>
+                <div class="member-info">
+                    <h4>王五 博士研究生</h4>
+                    <p>学生成员 / 研究课题：大语言模型越狱防御机制</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 联系方式 -->
+    <section>
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="contact-info">
+                <p>📍 地址：河北省石家庄市南二环东路20号 河北师范大学</p>
+                <p>✉️ 邮箱：<a href="mailto:contact@hebeicccs.edu.cn">contact@hebeicccs.edu.cn</a></p>
+                <p>💻 GitHub：<a href="https://github.com/hebeiCCCS" target="_blank">github.com/hebeiCCCS</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            &copy; 2026 河北师范大学计算机与网络空间安全学院. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
